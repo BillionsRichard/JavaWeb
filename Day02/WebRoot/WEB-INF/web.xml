@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>sam</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>sam123</param-value>
+	</context-param>
+	
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.MyFirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletConfigDemo</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.ServletConfigDemo</servlet-class>
+    <init-param>
+    	<param-name>para1</param-name>
+    	<param-value>para1Val</param-value>
+    </init-param>
+    
+    <init-param>
+    	<param-name>para2</param-name>
+    	<param-value>para2Value</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo2Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo3Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo3Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo04Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo04Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo05Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo05Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo06Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo06Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo07Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo07Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo08Servlet</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Demo08Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Service</servlet-name>
+    <servlet-class>com.cd.ncdh.javaweb.Service</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <url-pattern>/servlet/MyFirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>MyFirstServlet</servlet-name>
+  	<url-pattern>/servlet/fst*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletConfigDemo</servlet-name>
+    <url-pattern>/servlet/ServletConfigDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo2Servlet</servlet-name>
+    <url-pattern>/servlet/Demo2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo3Servlet</servlet-name>
+    <url-pattern>/servlet/Demo3Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo04Servlet</servlet-name>
+    <url-pattern>/servlet/Demo04Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo05Servlet</servlet-name>
+    <url-pattern>/servlet/Demo05Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo06Servlet</servlet-name>
+    <url-pattern>/servlet/Demo06Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo07Servlet</servlet-name>
+    <url-pattern>/servlet/Demo07Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo08Servlet</servlet-name>
+    <url-pattern>/servlet/Demo08Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Service</servlet-name>
+    <url-pattern>/servlet/Service</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

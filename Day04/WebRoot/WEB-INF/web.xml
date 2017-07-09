@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletDemo01</servlet-name>
+    <servlet-class>com.cd.ncdh.servlet.downloadfile.ServletDemo01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RefreshServlet</servlet-name>
+    <servlet-class>com.cd.ncdh.servlet.RefreshServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoCacheServlet</servlet-name>
+    <servlet-class>com.cd.ncdh.servlet.downloadfile.NoCacheServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>com.cd.ncdh.servlet.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValiImage</servlet-name>
+    <servlet-class>com.cd.ncdh.servlet.verifyImg.ValiImage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CacheServlet</servlet-name>
+    <servlet-class>com.cd.ncdh.servlet.downloadfile.CacheServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ServletDemo01</servlet-name>
+    <url-pattern>/servlet/ServletDemo01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshServlet</servlet-name>
+    <url-pattern>/servlet/RefreshServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoCacheServlet</servlet-name>
+    <url-pattern>/servlet/NoCacheServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/servlet/RedirectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValiImage</servlet-name>
+    <url-pattern>/servlet/ValiImage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CacheServlet</servlet-name>
+    <url-pattern>/servlet/CacheServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
